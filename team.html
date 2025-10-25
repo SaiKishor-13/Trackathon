@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Meet the Team - Trackathon</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+</head>
+<body>
+  <div class="wrap">
+    <nav class="nav">
+      <div class="brand">
+        <div class="logo"><i class="fa-solid fa-money-bill-1-wave"></i></div>
+        <div>
+          <div class="site-title">Trackathon</div>
+          <div style="font-size:12px;color:var(--muted)">Innovate • Evolve • Revolutionise</div>
+        </div>
+      </div>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Trackathon</a>
+        <a href="team.html" class="active">Meet the Team</a>
+        <a href="contact.html">Contact</a>
+        <a class="primary" href="#">Get Started</a>
+      </div>
+      <button class="menu-btn" id="menuBtn">☰</button>
+    </nav>
+
+    <section class="hero about-hero">
+      <div class="hero-card">
+        <h1>Meet the Team</h1>
+        <p>The brilliant minds behind Trackathon — passionate innovators driven by technology, creativity, and a shared vision for smarter financial management.</p>
+      </div>
+    </section>
+
+    <section class="features team-grid">
+      <div class="card">
+        <img src="https://cdn-icons-gif.flaticon.com/17556/17556483.gif" alt="Team Member" class="team-img">
+        <h3>Aaron Jacob Ronney</h3>
+        <p>Team Leader</p>
+      </div>
+
+      <div class="card">
+        <img src="https://cdn.dribbble.com/userupload/21023457/file/original-2ad63b53e762f5fa90ac56bf9c963546.gif" alt="Team Member" class="team-img">
+        <h3>Jeslyn Anna Joseph</h3>
+        <p>Designer</p>
+      </div>
+
+      <div class="card">
+        <img src="https://i.pinimg.com/originals/4a/ae/cd/4aaecd065f4eb2f64dd5a3387fa3eb74.gif" alt="Team Member" class="team-img">
+        <h3>Dia Aasmi John</h3>
+        <p>Data expert</p>
+      </div>
+
+      <div class="card">
+        <img src="https://cdn.dribbble.com/userupload/23137744/file/original-33aa4031ce49ea06d3808ec53067688d.gif" alt="Team Member" class="team-img">
+        <h3>Priscilla sam Varghese</h3>
+        <p>Data expert</p>
+      </div>
+
+      <div class="card">
+        <img src="https://i.pinimg.com/originals/a4/25/d6/a425d6a2dc30a5cc0dbbd881a10fcf7e.gif" alt="Team Member" class="team-img">
+        <h3>Abhay K Baiju</h3>
+        <p>Visual researcher</p>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Trackathon — Built with passion by our team. • <a href="contact.html">Contact</a>
+    </footer>
+  </div>
+  <script>
+    document.getElementById('menuBtn').addEventListener('click', ()=> {
+      document.getElementById('mobilePanel').classList.toggle('show');
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

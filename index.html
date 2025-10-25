@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Trackathon</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="wrap">
+    <nav class="nav">
+      <div class="brand">
+        <div class="logo"><i class="fa-solid fa-money-bill-1-wave"></i></div>
+        <div>
+          <div class="site-title">Trackathon</div>
+          <div style="font-size:12px;color:var(--muted)">Innovate • Evolve • Revolutionise</div>
+        </div>
+      </div>
+
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="about.html">About Trackathon</a>
+        <a href="team.html">Meet the Team</a>
+        <a href="contact.html">Contact</a>
+        <a class="primary" href="about.html">Get Started</a>
+      </div>
+
+      <button class="menu-btn" id="menuBtn">☰</button>
+    </nav>
+
+    <div id="mobilePanel" class="mobile-panel" aria-hidden="true">
+      <a href="#features">Home</a>
+      <a href="about.html">About Trackathon</a>
+      <a href="team.html">Meet the Team</a>
+      <a href="contact.html">Contact</a>
+      <a href="about.html">Get Started</a>
+    </div>
+
+    <section class="hero">
+      <div class="hero-card">
+        <h1>Smart Spending For Students</h1>
+        <p> Manage expenses, set budgets, and save smarter with Trackathon</p>
+
+        <div class="cta-row">
+          <a href="about.html"><button class="btn primary">Start Saving</button></a>
+          <a href="about.html"><button class="btn ghost">Learn More</button></a>
+        </div>
+
+        <div style="margin-top:22px">
+          <h3 style="margin:0 0 8px 0">Spent Bravely</h3>
+          <p style="margin:0;color:var(--muted)">“Do not save what is left after spending, but spend what is left after saving.” – Warren Buffett 
+</p>
+        </div>
+      </div>
+
+      <div class="device">
+        <div class="screen">
+          <!-- If you want to show a video or image from your upload, replace the element below with a <video> or <img> tag pointing to the file path. -->
+          <div style="text-align:center;">
+            <div style="font-size:18px;margin-bottom:6px">Mockup / Preview</div>
+            <div style="font-size:12px;color:var(--muted)"><img src="https://cdn.dribbble.com/userupload/42316417/file/original-947798bd922ee0b238ce6dfe8ca82256.gif" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="features">
+      <div class="card">
+        <h3>Innovate</h3>
+        <p>"Innovation distinguishes between a leader and a follower." – Steve Jobs</p>
+      </div>
+      <div class="card">
+        <h3>Evolve</h3>
+        <p>"It is not the strongest of the species that survives, nor the most intelligent, but the one most responsive to change." – Charles Darwin</p>
+      </div>
+      <div class="card">
+        <h3>Revolutionise</h3>
+        <p>"The ones who are crazy enough to think they can change the world are the ones who do." – Rob Siltanen</p>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Trackathon — Smart spendings for students. • <a href="#contact">Contact</a>
+    </footer>
+  </div>
+
+  <script>
+    // small JS for menu toggle and runtime details
+    document.getElementById('menuBtn').addEventListener('click', function(){
+      const p = document.getElementById('mobilePanel');
+      p.classList.toggle('show');
+      p.setAttribute('aria-hidden', !p.classList.contains('show'));
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
