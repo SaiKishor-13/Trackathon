@@ -60,6 +60,104 @@
     /* FOOTER */
     footer{margin-top:32px;padding:18px;text-align:center;color:var(--muted);font-size:14px}
 
+    /* ================================
+   SIGNUP PAGE STYLES
+==================================*/
+
+.signup-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px;
+  min-height: 80vh;
+}
+
+.signup-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 40px 50px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.signup-card h1 {
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+
+.signup-card p {
+  color: var(--muted);
+  margin-bottom: 30px;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-group {
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #b5b5b5;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  background-color: rgba(20, 30, 45, 0.6);
+  color: white;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: var(--accent, #00d084);
+}
+
+.signup-form .btn.primary {
+  width: 100%;
+  margin-top: 10px;
+  background-color: var(--accent, #00d084);
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: 600;
+  color: #000;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.signup-form .btn.primary:hover {
+  background-color: #00b674;
+}
+
+.form-footer {
+  margin-top: 20px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.form-footer a {
+  color: var(--accent, #00d084);
+  text-decoration: none;
+}
+
+.form-footer a:hover {
+  text-decoration: underline;
+}
+
+
     /* RESPONSIVE */
     @media (max-width:1000px){
       .hero{grid-template-columns:1fr 360px}
